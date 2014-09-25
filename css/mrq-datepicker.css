@@ -1,0 +1,142 @@
+/* Formatting for jquery uidatepicker */
+
+/* layout */
+
+.ui-datepicker {
+    width: auto;
+    padding: 5px;
+}
+
+.ui-datepicker table,
+.ui-datepicker .ui-datepicker-calendar,
+.ui-datepicker table td,
+.ui-datepicker table th {
+    padding: 0;
+    margin: 0;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    border: none;
+    background: none;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-default {
+    border: none;
+    text-align: center;
+}
+
+.ui-datepicker .ui-timepicker-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: normal;
+}
+
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker table td,
+.ui-datepicker table th {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.ui-datepicker th {
+    padding: 3px 5px;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    padding: 3px 5px;
+    width: 20px;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 0 8px;
+    margin: 1px;
+    height: 19px;
+    text-transform: uppercase;
+}
+
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl dt {
+    height: 25px;
+    margin-bottom: -25px;
+}
+
+.ui-timepicker-div dl dd {
+    margin: 0 10px 10px 65px;
+}
+
+.ui-timepicker-div .ui_tpicker_time_label {
+    display: none;
+}
+
+.ui-timepicker-div dl dd.ui_tpicker_time {
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.ui-tpicker-grid-label {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* colors */
+
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker table td,
+.ui-datepicker table th,
+ .ui-datepicker .ui-widget-header a {
+    color : #666;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    border-radius: 4px;
+    color: #666;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    font-weight: normal;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-default {
+    background: #fff;
+    font-weight: normal;
+    color: #666;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-active {
+    background: #9ac037;
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-state-default:hover {
+    background: #eee;
+    color: #666;
+}
+
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-today .ui-state-default {
+    font-weight: bold;
+}
+
+.ui-timepicker-div dl dd.ui_tpicker_time {
+    color: #333;
+    font-weight: bold;
+}

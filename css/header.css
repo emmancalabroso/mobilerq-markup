@@ -1,0 +1,310 @@
+/*
+ * layout
+*/
+.mrq.header {
+    height: 40px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1002; /* chosen dropdowns are at 1010 */
+}
+
+.mrq.header .logo {
+    height: 17px;
+    margin: 12px 20px 11px 0;
+    float: left;
+}
+
+/* reset some stuff */
+nav a,
+nav li,
+nav ul,
+nav .dropdown ul,
+nav img,
+nav .button,
+nav .button:hover,
+nav hr {
+    font-size: inherit;
+    font-weight: inherit;
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    white-space: nowrap;
+}
+
+nav ul>li {
+    float: left;
+}
+
+nav ul.links {
+    float: left;
+}
+
+nav ul.links>li>a {
+    line-height: 40px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+nav ul.links img {
+    height: 26px;
+    margin-bottom: -8px;
+}
+
+nav ul.links>li>a:last-child {
+    margin-right: 20px;
+}
+
+nav ul.buttons {
+    float: right;
+}
+nav ul.buttons>li>a,
+nav ul.buttons>li:hover>a {
+    display: block;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+nav ul>li .dropdown {
+    opacity: 0;
+    top: 9999px;
+    transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+}
+
+nav ul>li:hover .dropdown {
+    opacity: 1;
+    top: 40px;
+}
+
+nav .dropdown {
+    position: absolute;
+    top: 40px;
+    width: 220px;
+    z-index: 1020; /* chosen dropdowns are at 1010 */
+}
+
+nav ul.buttons .dropdown {
+    margin-left:-160px;
+}
+
+nav ul.links .dropdown {
+    margin-left:0px;
+    width: 340px;
+}
+
+
+/*
+ * color
+*/
+
+.dark.mrq.header {
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+    text-transform: lowercase;
+    text-shadow: #000 0em 0em 0.5em;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    background: #444;
+    background-image: url('../images/header-bg.jpg');
+    border-bottom: 3px solid #9AC037;
+}
+
+.dark.mrq.header a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color .3s, background .3s, border-color .3s;
+    -moz-transition: color .3s, background .3s, border-color .3s;
+    -webkit-transition: color .3s, background .3s, border-color .3s;
+}
+
+.dark.mrq.header .dropdown a,
+.dark.mrq.header .dropdown strong {
+    padding: 10px;
+    display: block;
+    background: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dark.mrq.header .dropdown strong {
+    font-weight: bold;
+    color: #fff;
+}
+
+.dark.mrq.header a:hover {
+    color: #fff;
+}
+
+.dark.mrq.header .dropdown a:hover {
+    background: #444;
+}
+
+.dark.mrq.header .dropdown {
+    text-transform: none;
+    background: #444;
+    text-shadow: #000 0em 0em 0.5em;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.dark.mrq.header .dropdown hr,
+.dark.mrq.header .dropdown ul,
+.dark.mrq.header .dropdown li {
+    width: 100%;
+}
+
+.dark.mrq.header .dropdown hr {
+    border: none;
+    border-top: 1px dotted #666;
+}
+
+.dark.mrq.header .dropdown li {
+    display: block;
+    background: #333;
+}
+
+
+
+.dark.mrq.header a.settings.button {
+    background-color: #666;
+    background-color: rgba(255,255,255,.1);
+}
+
+.dark.mrq.header .settings.button:hover {
+    background: #777;
+    background-color: rgba(255,255,255,.3);
+}
+
+.dark.mrq.header .add.button {
+    color: #fff;
+    background: #999;
+    background-color: rgba(255,255,255,.4);
+}
+.dark.mrq.header .add.button:hover {
+    background: #aaa;
+    background-color: rgba(255,255,255,.6);
+}
+
+.dark.mrq.header nav .dropdown a.button {
+    line-height: 20px;
+    font-size: 11px;
+    font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight:bold;
+    font-stretch:normal;
+    background: #9AC037;
+    color: #ffffff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border: #9AC037 solid 1px;
+    text-transform:uppercase;
+    text-shadow: none;
+    text-align: center;
+    margin: 14px 10px;
+    padding: 0;
+    width: 198px;
+}
+
+.dark.mrq.header nav .dropdown a.button:hover {
+    background: #666;
+    border: #666 solid 1px;
+}
+
+/*
+ * mrq message stuff
+*/
+#mrq-message {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    top: 43px;
+    z-index: 1001;
+}
+
+#mrq-message>.mrq-status,
+#mrq-message>.mrq-error {
+    display: inline;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+#mrq-message>.mrq-error {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    background: #cc3333;
+}
+
+#mrq-message>.mrq-status {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    background: #9AC037;
+}
+
+#popover iframe {
+    width:456px;
+    height:310px;
+}
+.ui-dialog,
+.ui-datepicker {
+    -moz-box-shadow: 0 5px  20px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 5px 20px rgba(0,0,0,.25);
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+}
+
+#mrq-feedback-dialog {
+    box-sizing: border-box;
+    right: 0;
+    position: fixed;
+    top: 120px;
+    z-index: 1; /* chosen dropdowns are at 1010 */
+    background: #9AC037;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -khtml-border-radius: 5px 0 0 5px;
+    -webkit-appearance: none;
+    border-radius: 5px 0 0 5px;
+    border: solid #fff 2px;
+    padding: 10px 0px;
+    transition: padding .3s, background .3s;
+    -moz-transition: padding .3s, background .3s;
+    -webkit-transition: padding .3s, background .3s;
+}
+
+#mrq-feedback-dialog a.feedback-button {
+    padding: 0px 10px 0px 3px;
+    transition: padding .1s, background .3s;
+    -moz-transition: padding .1s, background .3s;
+    -webkit-transition: padding .1s, background .3s;
+}
+
+#mrq-feedback-dialog:hover {
+    background: #666;
+}
+#mrq-feedback-dialog:hover a.feedback-button {
+    padding-right: 20px;
+}
