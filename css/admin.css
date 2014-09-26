@@ -884,17 +884,17 @@ nav.breadcrumb strong {
 
 /*Filters           */
 
-nav[role="navigation"] li {
+nav[role="navigation"] li, .heading-options li {
     float: left;
     font-size: 14px;
     border-right: 1px solid #ddd;
 }
 
-nav[role="navigation"] li:last-child {
+nav[role="navigation"] li:last-child, .heading-options li:last-child {
     border-right: none;
 }
 
-nav[role="navigation"] li a {
+nav[role="navigation"] li a, .heading-options li a {
     float: left;
     padding: 0 10px;
     text-decoration: none;
@@ -903,23 +903,39 @@ nav[role="navigation"] li a {
 }
 
 nav[role="navigation"] li a:hover,
-nav[role="navigation"] li a:focus {
+nav[role="navigation"] li a:focus,
+.heading-options li a:hover, 
+.heading-options li a:focus {
     color: #333;
 }
 
-nav[role="navigation"] li a:active {
+nav[role="navigation"] li a:active, .heading-options li a:active {
     color: #666;
 }
 
-nav[role="navigation"] li.active a {
+nav[role="navigation"] li.active a, .heading-options li.active a {
     font-weight: bold;
     color: #333;
+}
+
+.heading-options {
+    padding: 0.75em 0;
+    line-height: 2.4em;
+}
+
+.heading-options li input {
+    margin: 0 20px 0 10px;
 }
 
 /*reusable body section*/
 .b-section {
     margin-top: 3em;
 }
+
+.right {
+    float: right;
+}
+
 
 /*Tag Panels              */
 
@@ -928,6 +944,11 @@ nav[role="navigation"] li.active a {
     text-align: left;
     border-bottom: 1px dotted #ccc;
     border-top: 1px dotted #ccc;
+
+}
+
+.tag-panel.tag {
+    border: 1px solid #ccc;
 
 }
 
@@ -973,6 +994,17 @@ nav[role="navigation"] li.active a {
 .tag-panel .badge:hover {
     color: #dd191d;
     background-color: #efefef;
+}
+
+.tag-panel.tag .badge {
+    border-radius: 15px;
+    color: #fff;
+    background-color: #9AC037;
+}
+
+.tag-panel.tag .badge:hover {
+    color: #ffffff;
+    background-color: #666666;
 }
 
 .badge {
