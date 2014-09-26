@@ -923,6 +923,10 @@ nav[role="navigation"] li.active a, .heading-options li.active a {
     line-height: 2.4em;
 }
 
+.heading-options li {
+    border: none;
+}
+
 .heading-options li input {
     margin: 0 20px 0 10px;
 }
