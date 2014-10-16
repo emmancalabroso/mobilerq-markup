@@ -1005,6 +1005,7 @@ nav.tabs li.active a {
     display:block;
     color: #aaa;
     padding: .5em 1em;
+    vertical-align: middle;
 }
 
 .tag-panel > a:hover {
@@ -1025,7 +1026,7 @@ nav.tabs li.active a {
 .tag-panel > .right {
     display: inline-block;
     position: absolute;
-    top: 1.5em;
+    top: 0.9em;
     right: 1em;
 }
 
@@ -1071,6 +1072,14 @@ nav.tabs li.active a {
     vertical-align: baseline;
     background-color: #777;
     border-radius: 10px;
+}
+
+.sidebar-wrapper {
+    margin-top: -50px;
+}
+
+.sidebar {
+    margin-top: 50px;
 }
 
 
