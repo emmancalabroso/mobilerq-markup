@@ -273,7 +273,7 @@ button.button {
     color: #000;
     background: #fff;
     border-color: #ccc;
-}
+}`
 
 .warning {
     color: cc3333;
@@ -899,7 +899,7 @@ nav[role="navigation"] li a, .heading-options li a {
     padding: 0 10px;
     text-decoration: none;
     color: #999;
-    border-radius: 4px;
+    //border-radius: 4px;
 }
 
 nav[role="navigation"] li a:hover,
@@ -918,6 +918,41 @@ nav[role="navigation"] li.active a, .heading-options li.active a {
     color: #333;
 }
 
+.tab-row {
+    border-bottom: 1px solid #ddd;
+}
+
+nav.tabs li {
+    float: left;
+    margin: 0 4px 0 0;
+    font-size: 14px;
+    border-right: none;
+}
+nav.tabs li a {
+    float: left;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #bbb;
+    -webkit-border-top-left-radius: 6px ;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+nav.tabs li a:hover,
+nav.tabs li a:focus {
+    background: #999;
+}
+nav.tabs li a:active {
+    background: #888;
+}
+nav.tabs li.active a {
+    color: #fff;
+    background: #666;
+}               
+
 .heading-options {
     padding: 0.75em 0;
     line-height: 2.4em;
@@ -932,7 +967,13 @@ nav[role="navigation"] li.active a, .heading-options li.active a {
 }
 
 /*reusable body section*/
-.b-section {
+.mt-1 {
+    margin-top: 1em;
+}
+.mt-2 {
+    margin-top: 2em;
+}
+.mt-3 {
     margin-top: 3em;
 }
 
@@ -946,7 +987,6 @@ nav[role="navigation"] li.active a, .heading-options li.active a {
 .tag-panel {
     position: relative;
     text-align: left;
-    border-bottom: 1px dotted #ccc;
     border-top: 1px dotted #ccc;
 
 }
@@ -968,6 +1008,10 @@ nav[role="navigation"] li.active a, .heading-options li.active a {
 }
 
 .tag-panel > a:hover {
+    background: #eee;
+}
+
+.tag-panel.active > a {
     background: #eee;
 }
 
@@ -1000,6 +1044,8 @@ nav[role="navigation"] li.active a, .heading-options li.active a {
     background-color: #efefef;
 }
 
+
+
 .tag-panel.tag .badge {
     border-radius: 15px;
     color: #fff;
@@ -1026,4 +1072,6 @@ nav[role="navigation"] li.active a, .heading-options li.active a {
     background-color: #777;
     border-radius: 10px;
 }
+
+
 

@@ -9,6 +9,7 @@
             <link rel="stylesheet" href="css/chosen.css">
             <link rel="stylesheet" href="css/mrq-chosen.css">
             <link rel="stylesheet" href="mrq-ui/mrq-datepicker.css">
+            <link rel="stylesheet" href="css/autofix_anything.css">
             <link rel="stylesheet" href="css/admin.css">
             <link rel="stylesheet" href="css/header.css">
             <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -168,56 +169,179 @@
         <div id="mrq-message" class="hidden"><div class="mrq-status"></div></div>
         <div class="bg">
             <div class="container">
-                <nav class="breadcrumb">
-                    <a href="#">Dashboard</a>/
-                    <a href="index.html">Tag Groups</a>/
-                    <a href="index.html">Tag</a>
-                </nav>  
-                <div class="row">
-                    <div class="six columns">
-                        <h2>Male</h2>
-                        <p>This is a short description of the tag</p>
-                    </div>
-                    <div class="ten columns">
-                        <nav class="heading-options right">
-                            <ul>
-                                <li><a href="#">Hide Tag</a></li>
-                                <li><a href="#">Edit Tag</a></li>
-                            </ul>
-                        </nav>      
-                    </div>
+                <div class="sixteen columns">
+                    <div class="row"></div>
                 </div>
-                <div class="b-section">
-                    <div class="sixteen columns">
-                        <div class="mrq-frame">
-                            <h1><i class="fa fa-comments"></i> Audiences</h1>
-                            <ul class="listing">
-                                <li>
-                                    <a href="audience/01d721ec-2564-4240-8292-dd281093287b.html">
-                                        <h2>Male Demo App User</h2>
-                                        <p>Saved September 19, 2014 6:14AM</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="audience/70acb01f-7947-4573-b7c3-bb91cdd2871b.html">
-                                        <h2>Cebuano Flyer</h2>
-                                        <p>Saved September 19, 2014 6:13AM</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="audience/1ba50ec3-acb9-4a55-a71d-dfe1826f1833.html">
-                                        <h2>New Audience</h2>
-                                        <p>Saved September 12, 2014 6:31AM</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="audience/7475d4f3-4b76-4cf2-9b43-d6e556fbbe60.html">
-                                        <h2>Test Audience</h2>
-                                        <p>Saved September 11, 2014 5:38AM</p>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="sixteen columns">
+                    <div class="mrq-frame">
+                        <div class="row">
+                            <div class="sixteen columns">
+                                <h1>Tags</h1>
+                            </div>
+                        </div>
 
+                        <!-- Tabs -->
+                        <div class="tab-row row">
+                            <nav role="navigation" class="tabs">
+                                <ul>
+                                    <li class="active"><a href="#">All Tags</a></li>
+                                    <li><a href="#">Tag Groups</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="eight columns">
+                                <form action="/" class="search">
+                                    <fieldset>
+                                        <input type="text" placeholder="Search" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="seven columns">
+                                <div class="">
+                                    <a class="button right" href="#">Create New Tag</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="seven columns">
+                                <div class="tag-panel active">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>4:35PM 10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>4:35PM 10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>4:35PM 10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>10/02</span>
+                                    </div>
+                                </div>
+                                <div class="tag-panel">
+                                    <a href="">
+                                        <h2>Tag Name</h2>
+                                        <p>Source</p>
+                                    </a>
+                                    <div class="right">
+                                        <span>10/02</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eight columns wrapper">
+                                <div class="sidebar mrq-frame">
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <h2>Tag Name</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="three columns">
+                                            <p>Customer Birthday</p>
+                                            <p>CRM98273-Birthday</p>
+                                            <p>Last Transmitted: 10/12</p>
+                                        </div>
+                                        <div class="two columns">
+                                            <span>Source: Website CMS</span>
+                                        </div>
+                                        <div class="two columns">
+                                            <a class="button delete right" href="#">Delete          </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <nav role="navigation">
+                                                <ul>
+                                                    <li class="active"><a href="#">GROUPS</a></li>
+                                                    <li><a href="#">AUDIENCES</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="tag-panel">
+                                            <a href="">
+                                                <h2>Group Name</h2>
+                                            </a>
+                                        </div>
+                                        <div class="tag-panel">
+                                            <a href="">
+                                                <h2>Group Name</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -295,6 +419,18 @@
                     }
 
                 </style>
+
+                <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script src="js/jquery.autofix_anything.min.js"></script>
+
+                <script>
+                    $(".sidebar").autofix_anything({
+                      customOffset: false, // You can define custom offset for when you want the container to be fixed. This option takes the number of pixels from the top of the page. The default value is false which the plugin will automatically fix the container when the it is in the viewport
+                      manual: false, // Toggle this to true if you wish to manually fix containers with the public method. Default value is false
+                      onlyInContainer: true // Set this to false if you don't want the fixed container to limit itself to the parent's container.
+                    });
+                </script>
+
                 <script>
                     $(function() {
 
