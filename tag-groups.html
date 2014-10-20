@@ -14,6 +14,8 @@
             <link rel="stylesheet" href="css/header.css">
             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" href="css/mrq-ui.css" type="text/css">
+            <link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css">
+            <link rel="stylesheet" href="css/tabs.css" type="text/css">
 
         <style>
             [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
@@ -434,46 +436,148 @@
                                             <span>Source: Website CMS</span>
                                         </div>
                                         <div class="two columns">
-                                            <a class="button delete right" href="#">Delete          </a>
+                                            <a class="button delete right" href="#">Delete</a>
                                         </div>
                                     </div>
+
+                                    <!-- Nav Tabs-->
                                     <div class="row">
                                         <div class="six columns">
-                                            <nav role="navigation">
-                                                <ul>
-                                                    <li class="active"><a href="#">TAGS</a></li>
-                                                    <li><a href="#">AUDIENCES</a></li>
+                                            <div id='tabs'>
+                                                <ul id='tabs_nav'>
+                                                    <li class="active"><a href="#tabs-1">TAGS</a></li>
+                                                    <li><a href="#tabs-2">AUDIENCES</a></li>
                                                 </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="tag-panel">
-                                            <a href="">
-                                                <h2>Tag</h2>
-                                            </a>
-                                            <div class="right">
-                                                <nav role="navigation">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-remove"></i></a></li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                        <div class="tag-panel">
-                                            <a href="">
-                                                <h2>Tag</h2>
-                                            </a>
-                                            <div class="right">
-                                                <nav role="navigation">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-remove"></i></a></li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
+                                                <div id="tabs_container">
+                                                    <div id="tabs-1">
+                                                         <div class="row">
+                                                            <!--Tag Entry-->
+                                                            <div class="tag-panel">
+                                                                <a href="">
+                                                                    <h2>Tag</h2>
+                                                                </a>
+                                                                <div class="right">
+                                                                    <nav role="navigation">
+                                                                        <ul>
+                                                                            <li><a href="#"><i class="fa fa-remove"></i></a></li>
+                                                                        </ul>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <!--Tag Entry-->
+                                                            <div class="tag-panel">
+                                                                <a href="">
+                                                                    <h2>Tag</h2>
+                                                                </a>
+                                                                <div class="right">
+                                                                    <nav role="navigation">
+                                                                        <ul>
+                                                                            <li><a href="#"><i class="fa fa-remove"></i></a></li>
+                                                                        </ul>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <!--Tag Entry-->
+                                                            <div class="tag-panel">
+                                                                <a href="">
+                                                                    <h2>Tag</h2>
+                                                                </a>
+                                                                <div class="right">
+                                                                    <nav role="navigation">
+                                                                        <ul>
+                                                                            <li><a href="#"><i class="fa fa-remove"></i></a></li>
+                                                                        </ul>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
 
+                                                            <!--Tag Entry-->
+                                                            <div class="tag-panel">
+                                                                <a href="">
+                                                                    <h2>Tag</h2>
+                                                                </a>
+                                                                <div class="right">
+                                                                    <nav role="navigation">
+                                                                        <ul>
+                                                                            <li><a href="#"><i class="fa fa-remove"></i></a></li>
+                                                                        </ul>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--Tag Entry-->
+                                                            <div class="tag-panel">
+                                                                <a href="">
+                                                                    <h2>Tag</h2>
+                                                                </a>
+                                                                <div class="right">
+                                                                    <nav role="navigation">
+                                                                        <ul>
+                                                                            <li><a href="#"><i class="fa fa-remove"></i></a></li>
+                                                                        </ul>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+                                                        </div>   
+                                                    </div> <!--End of tabs 1-->
+                                                    <div id="tabs-2">
+                                                        <!--Audience Entry-->
+                                                        <div class="tag-panel">
+                                                            <a href="">
+                                                                <h2>Audience Name</h2>
+                                                            </a>
+                                                            <div class="right">
+                                                                <span>35,209</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Audience Entry-->
+                                                        <div class="tag-panel">
+                                                            <a href="">
+                                                                <h2>Audience Name</h2>
+                                                            </a>
+                                                            <div class="right">
+                                                                <span>35,209</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Audience Entry-->
+                                                        <div class="tag-panel">
+                                                            <a href="">
+                                                                <h2>Audience Name</h2>
+                                                            </a>
+                                                            <div class="right">
+                                                                <span>35,209</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Audience Entry-->
+                                                        <div class="tag-panel">
+                                                            <a href="">
+                                                                <h2>Audience Name</h2>
+                                                            </a>
+                                                            <div class="right">
+                                                                <span>35,209</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!--Audience Entry-->
+                                                        <div class="tag-panel">
+                                                            <a href="">
+                                                                <h2>Audience Name</h2>
+                                                            </a>
+                                                            <div class="right">
+                                                                <span>35,209</span>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--End of tabs 2-->
+                                                </div> <!--End of tabs container-->
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -720,6 +824,9 @@
 
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/stickUp.min.js"></script>
+        <script src="js/jquery.qtip.min.js"></script>
+        <script src="js/tabs.js"></script>
+
 
         <script type="text/javascript">
           //initiating jQuery
@@ -729,6 +836,20 @@
               $('.sidebar').stickUp({
                 marginTop: 'auto'
               });
+
+              $('.sidebar-wrapper .tag-panel').qtip({ // Grab some elements to apply the tooltip to
+                    content: {
+                        text: ' <div class="customTooltip"><h2>Tag Name</h2><h3>Source Identifier</h3><h3>Last Modified</h3><h3>This is a description</h3></div>'
+                    },
+                    position: {
+                        my: 'bottom center',
+                        at: 'top center'
+                    },
+                    style: { classes: 'qtip-light'}
+                });
+
+              $('#tabs').tabulous({});
+
             });
           });
 
