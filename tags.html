@@ -14,6 +14,7 @@
             <link rel="stylesheet" href="css/header.css">
             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" href="css/mrq-ui.css" type="text/css">
+            <link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css">
 
         <style>
             [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
@@ -586,15 +587,29 @@
 
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/stickUp.min.js"></script>
+        <script src="js/jquery.qtip.min.js"></script>
 
         <script type="text/javascript">
           //initiating jQuery
           jQuery(function($) {
+
             $(document).ready( function() {
-              //enabling stickUp on the '.navbar-wrapper' class
-              $('.sidebar').stickUp({
-                marginTop: 'auto'
-              });
+                //enabling stickUp on the '.navbar-wrapper' class
+                $('.sidebar').stickUp({
+                    marginTop: 'auto'
+               });
+
+                $('.sidebar-wrapper .tag-panel').qtip({ // Grab some elements to apply the tooltip to
+                    content: {
+                        text: ' <div class="customTooltip"><h2>Tag Name</h2><h3>Source Identifier</h3><h3>Last Modified</h3><h3>This is a description</h3></div>'
+                    },
+                    position: {
+                        my: 'bottom center',
+                        at: 'top center'
+                    },
+                    style: { classes: 'qtip-light'}
+                });
+
             });
           });
 

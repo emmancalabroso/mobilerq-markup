@@ -1082,5 +1082,10 @@ nav.tabs li.active a {
     margin-top: 50px;
 }
 
+/* Custom Tooltip Class */
+.customTooltip {
+    padding: 0 15px 15px;
+}
+
 
 
