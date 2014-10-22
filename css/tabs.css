@@ -5,6 +5,7 @@ a:active,a:focus {
 
 p {
 	margin-bottom: 20px;
+	text-align: left;
 }
 
 #wrapper {

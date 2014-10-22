@@ -9,13 +9,13 @@
             <link rel="stylesheet" href="css/chosen.css">
             <link rel="stylesheet" href="css/mrq-chosen.css">
             <link rel="stylesheet" href="mrq-ui/mrq-datepicker.css">
-            <link rel="stylesheet" href="css/autofix_anything.css">
             <link rel="stylesheet" href="css/admin.css">
             <link rel="stylesheet" href="css/header.css">
             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" href="css/mrq-ui.css" type="text/css">
             <link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css">
              <link rel="stylesheet" href="css/tabs.css" type="text/css">
+             <link rel="stylesheet" href="css/jquery.remodal.css" type="text/css">
 
         <style>
             [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
@@ -150,7 +150,6 @@
                 </div>
             </div>
         </div>
-
         <!-- end header -->
 
         <script>
@@ -169,7 +168,7 @@
             }
         </script>
         <div id="mrq-message" class="hidden"><div class="mrq-status"></div></div>
-        <div class="bg">
+        <div class="bg remodal-bg">
             <div class="container">
                 <div class="sixteen columns">
                     <div class="row"></div>
@@ -202,7 +201,53 @@
                             </div>
                             <div class="eight columns">
                                 <div class="">
-                                    <a class="button right" href="#">Create New Tag</a>
+                                    <a class="button right" href="#" data-remodal-target="modal">Create New Tag</a>
+
+
+                                    <!-- Modal -->
+                                    <div class="remodal" data-remodal-id="modal">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="five columns">
+                                                    <h1>Add/Edit Tag</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <form action="">
+                                                    <div class="eight columns">
+                                                        <div class="form-group">
+                                                            <label for="tagName">Tag Name</label>
+                                                            <input id="tagName" name="tagName" type="text" value="">
+                                                        </div>
+                                                        <br class="clear">
+                                                        <div class="form-group">
+                                                            <label for="tagDescription">Description</label>
+                                                            <textarea id="tagDescription" name="tagDescription" rows="2"></textarea>
+                                                        </div>   
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="row">
+                                                <div>
+                                                    <h2>Identifier</h2>
+                                                    <p>CRM98273-Birthday</p>
+                                                </div>
+                                                <div>
+                                                    <h2>Source</h2>
+                                                    <p>Website CMS</p>
+                                                </div>
+                                                <div>
+                                                    <h2>First Seen</h2>
+                                                    <p>10/12</p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <a class="button right" href="#">Add Tag</a>
+                                            <a class="button delete right" href="#">Cancel</a>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -683,6 +728,7 @@
                 </script>
             </div>
         </div>
+
         <!-- start footer -->
         <footer>
             <div class="mrq footer">
@@ -703,10 +749,11 @@
             </div>
         </footer>
 
-        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="js/stickUp.min.js"></script>
         <script src="js/jquery.qtip.min.js"></script>
         <script src="js/tabs.js"></script>
+        <script src="js/jquery.remodal.js"></script>
 
         <script type="text/javascript">
           //initiating jQuery
