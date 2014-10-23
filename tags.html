@@ -15,7 +15,7 @@
             <link rel="stylesheet" href="css/mrq-ui.css" type="text/css">
             <link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css">
              <link rel="stylesheet" href="css/tabs.css" type="text/css">
-             <link rel="stylesheet" href="css/jquery.remodal.css" type="text/css">
+             <!-- <link rel="stylesheet" href="css/jquery.remodal.css" type="text/css"> -->
 
         <style>
             [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
@@ -201,16 +201,17 @@
                             </div>
                             <div class="eight columns">
                                 <div class="">
-                                    <a class="button right" href="#" data-remodal-target="modal">Create New Tag</a>
+                                    <a id="mrq-modalTrigger" class="button right" rel="leanModal" href="#mrq-modal">Create New Tag</a>
 
 
                                     <!-- Modal -->
-                                    <div class="remodal" data-remodal-id="modal">
+                                    <div id="mrq-modal">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="five columns">
                                                     <h1>Add/Edit Tag</h1>
                                                 </div>
+                                                <a href="#" class="modal-close modal_close"></a>
                                             </div>
                                             <div class="row">
                                                 <form action="">
@@ -228,22 +229,22 @@
                                                 </form>
                                             </div>
                                             <div class="row">
-                                                <div class="eight columns">
+                                                <div class="sixteen columns">
                                                     <h2>Identifier</h2>
                                                     <p>CRM98273-Birthday</p>
                                                 </div>
-                                                <div class="eight columns">
+                                                <div class="sixteen columns">
                                                     <h2>Source</h2>
                                                     <p>Website CMS</p>
                                                 </div>
-                                                <div class="eight columns">
+                                                <div class="sixteen columns">
                                                     <h2>First Seen</h2>
                                                     <p>10/12</p>
                                                 </div>
                                             </div>
                                             <br>
                                             <a class="button right" href="#">Add Tag</a>
-                                            <a class="button delete right" href="#">Cancel</a>
+                                            <a class="button delete right modal_close" href="#">Cancel</a>
                                         </div>
                                     </div>
 
@@ -753,7 +754,7 @@
         <script src="js/stickUp.min.js"></script>
         <script src="js/jquery.qtip.min.js"></script>
         <script src="js/tabs.js"></script>
-        <script src="js/jquery.remodal.js"></script>
+        <script src="js/jquery.leanModal.min.js"></script>
 
         <script type="text/javascript">
           //initiating jQuery
@@ -779,6 +780,8 @@
                  $('#tabs').tabulous({
                     effect: 'slideLeft'
                  });
+
+                 $("#mrq-modalTrigger").leanModal({ top : 50, overlay : 0.4, closeButton: ".modal_close" });
 
             });
           });

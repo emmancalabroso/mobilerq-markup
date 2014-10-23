@@ -1091,6 +1091,72 @@ nav.tabs li.active a {
     padding: 0 15px 15px;
 }
 
+/* Modal Class */
+#mrq-modal {
+    display: none;
+    background-color: #ffffff;
+    padding: 35px;
+    background-clip: padding-box;
+
+    -webkit-box-shadow: 0px 0px 8px #171a24;
+    box-shadow: 0px 0px 8px #171a24;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    -moz-transition: -moz-transform 0.2s linear;
+    -o-transition: -o-transform 0.2s linear;
+    transition: transform 0.2s linear;
+}
+
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 28px;
+    height: 28px;
+
+    text-decoration: none;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+}
+
+.modal-close:after {
+    display: block;
+
+    font-size: 28px;
+    font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
+    content: "×";
+    line-height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #cccccc;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.modal-close:hover.modal-close:after, .modal-close:active.modal-close:after {
+    color: #3e5368;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
 
 
 
