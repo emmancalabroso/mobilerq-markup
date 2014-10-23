@@ -160,7 +160,7 @@ body.remodal_active .remodal {
     font-size: 28px;
     font-family: Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif !important;
     content: "×";
-    line-height: 28px;
+    line-height: 30px;
     cursor: pointer;
     text-decoration: none;
     color: #3e5368;
