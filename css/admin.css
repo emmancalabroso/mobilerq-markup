@@ -1158,6 +1158,11 @@ nav.tabs li.active a {
     display: none;
 }
 
+.content-wrapper:after {
+    content: '.';
+    visibility: hidden;
+}
+
 
 
 
