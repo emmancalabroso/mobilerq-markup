@@ -1,0 +1,514 @@
+<html>
+    <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>New MobileRQ</title>
+            <link rel="stylesheet" href="css/reset.css">
+            <link rel="stylesheet" href="css/skeleton.css">
+            <link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.20.custom.css">
+            <link rel="stylesheet" href="css/chosen.css">
+            <link rel="stylesheet" href="css/mrq-chosen.css">
+            <link rel="stylesheet" href="mrq-ui/mrq-datepicker.css">
+            <link rel="stylesheet" href="css/admin.css">
+            <link rel="stylesheet" href="css/header.css">
+            <link rel="stylesheet" href="css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/mrq-ui.css" type="text/css">
+            <link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css">
+             <link rel="stylesheet" href="css/tabs.css" type="text/css">
+             <!-- <link rel="stylesheet" href="css/jquery.remodal.css" type="text/css"> -->
+
+        <style>
+            [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+        </style>
+        <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+            .en-markup-crop-options {
+                top: 18px !important;
+                left: 50% !important;
+                margin-left: -90px !important;
+                width: 180px !important;
+                border: 2px rgba(255,255,255,.38) solid !important;
+                border-radius: 4px !important;
+            }
+
+            .en-markup-crop-options div div:first-of-type {
+                margin-left: 0px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dark mrq header">
+            <div class="container">
+                <div class="sixteen columns">
+                    <a href="/admin/">
+                        <img src="/images/mrq-logo-white.png" class="logo">
+                    </a>
+                    <nav>
+                        <ul class="links">
+                            <li><a href="/admin/"><i class="fa fa-home"></i></a></li>
+                            <li><a href="/admin/dashboard.html">
+                              <i class="fa fa-bar-chart-o"></i> Dashboard</a>
+                              <div class="dropdown">
+                                  <ul>
+                                        <li><a href="/admin/dashboard/requests.html">Fulfilled Requests</a></li>
+                                        <li><a href="/admin/dashboard/views.html">Display Messages</a></li>
+                                        <li><a href="/admin/dashboard/push.html">Push Messages</a></li>
+                                  </ul>
+                              </div>
+                            </li>
+                            <li>
+                                <a href="/admin/campaigns.html">Campaigns</a>
+                                <div class="dropdown">
+                                    <hr>
+                                        <strong>Recently Updated</strong>
+                                        <ul>
+                                            <li><a href="/admin/campaign/8898ad93-b13f-41b2-95aa-b829911cdb9b.html">Hello Marriot</a></li>
+                                            <li><a href="/admin/campaign/4da1ac4c-b06c-4a3b-b55e-34d4f6cbbad0.html">hello</a></li>
+                                            <li><a href="/admin/campaign/585c9ef4-022a-4e16-b7d2-76d00c707a14.html">Test</a></li>
+                                            <li><a href="/admin/campaign/eb890c1e-064d-4d6d-a6e7-0b3c478b6ab2.html">Test for closing modal view</a></li>
+                                            <li><a href="/admin/campaign/34dfcc95-94bf-4713-ac5f-a5538b0745ef.html">This is A PUSH!!!</a></li>
+                                        </ul>
+                                    <hr>
+                                    <ul>
+                                        <li><a href="/admin/campaigns.html">All Campaigns</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/admin/creatives.html">Creatives</a>
+                                <div class="dropdown">
+                                        <hr>
+                                        <strong>Recently Updated</strong>
+                                        <ul>
+                                            <li><a href="/admin/creative/ee63a767-617c-4ccf-b4ad-7e9bd062b1cf.html">Queen City</a></li>
+                                            <li><a href="/admin/creative/5f7bbe60-e144-4fea-a4cf-51a41fe36475.html">Piso Fare</a></li>
+                                            <li><a href="/admin/creative/4bed8728-887b-431c-b397-c91a846398b8.html">Sleep with Marriott</a></li>
+                                            <li><a href="/admin/creative/5d115ee9-c134-4e90-80fa-2d2578d318e0.html">Radisson Blu</a></li>
+                                        </ul>
+                                    <hr>
+                                    <ul>
+                                        <li class="highlight"><a href="/admin/creatives.html">All Creatives</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/admin/audiences.html">Audiences</a>
+                                <div class="dropdown">
+                                        <hr>
+                                        <strong>Recently Updated</strong>
+                                        <ul>
+                                            <li><a href="/admin/audience/01d721ec-2564-4240-8292-dd281093287b.html">Male Demo App User</a></li>
+                                            <li><a href="/admin/audience/70acb01f-7947-4573-b7c3-bb91cdd2871b.html">Cebuano Flyer</a></li>
+                                            <li><a href="/admin/audience/1ba50ec3-acb9-4a55-a71d-dfe1826f1833.html">New Audience</a></li>
+                                            <li><a href="/admin/audience/7475d4f3-4b76-4cf2-9b43-d6e556fbbe60.html">Test Audience</a></li>
+                                        </ul>
+                                    <hr>
+                                    <ul>
+                                        <li class="highlight"><a href="/admin/audiences.html">All Audiences</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="buttons">
+                            <li><a href="/admin/settings.html" class="settings button"><i class="fa fa-cog"></i></a>
+                                <div class="dropdown">
+                                    <hr>
+                                    <ul>
+                                        <li>
+                                            <a href="/admin/settings/myaccount.html">
+                                                <i class="fa fa-cogs"></i>
+                                                emman.calabroso@chromedia.com
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <ul>
+                                        <li> </li>
+                                        <li><a href="/admin/settings/users.html"><i class="fa fa-user"></i> Users</a></li>
+                                        <li><a href="/admin/settings/apps.html"><i class="fa fa-mobile-phone"></i> Apps</a></li>
+                                        <li><a href="/admin/settings/apps.html"><i class="fa fa-mobile-phone"></i> Tag Groups</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul>
+                                        <li><a href="/j_spring_security_logout" class="button"><i class="fa fa-signout"></i> Sign Out</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="/admin/add_stuff.html" class="add button"><i class="fa fa-plus"></i></a>
+                                <div class="dropdown">
+                                    <hr>
+                                    <ul>
+                                        <li><a href="/admin/campaign/pushnow.html"><i class="fa fa-sign-out"></i> Push Now</a></li>
+                                        <li><a href="/admin/campaign/new.html"><i class="fa fa-share-square-o"></i> New Campaign</a></li>
+                                        <li><a href="/admin/creative/new.html"><i class="fa fa-picture-o"></i> New Creative</a></li>
+                                        <li><a href="/admin/audience/new.html"><i class="fa fa-comments"></i> New Audience</a></li>
+                                        <li><a href="/admin/settings/app/new.html"><i class="fa fa-mobile-phone"></i> New App</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <script>
+            function mrqDisplayErrorMessage(message) {
+                $('#mrq-message').stop(true).hide();
+                $('#mrq-message').html($("<div>").addClass('mrq-error').html(message));
+                $('#mrq-message').slideDown().delay(5000).slideUp();
+            }
+            function mrqDisplayStatusMessage(message) {
+                $('#mrq-message').stop(true).hide();
+                $('#mrq-message').html($("<div>").addClass('mrq-status').html(message));
+                $('#mrq-message').slideDown().delay(5000).slideUp();
+            }
+            function mrqClosePopover() {
+                $("#popover").dialog('close');
+            }
+        </script>
+        <div id="mrq-message" class="hidden"><div class="mrq-status"></div></div>
+        <div class="bg remodal-bg">
+            <div class="container">
+                <div class="sixteen columns">
+                    <div class="row"></div>
+                </div>
+                <div class="sixteen columns">
+                    <div class="mrq-frame">
+                        <div class="row">
+                            <div class="sixteen columns">
+                                <h1>Tags</h1>
+                            </div>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="tab-row row">
+                            <nav role="navigation" class="tabs">
+                                <ul>
+                                    <li class="active"><a href="#">All Tags</a></li>
+                                    <li><a href="#">Tag Groups</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="row">
+                            <div class="fifteen columns">
+                                <div class="mrq-frame">
+                                    <div class="row">
+                                        <div class="seven columns">
+                                            <div class="row">
+                                                <form action="">
+                                                    <div class="eight columns">
+                                                        <div class="form-group">
+                                                            <label for="tagName">Tag Name</label>
+                                                            <input id="tagName" name="tagName" type="text" value="">
+                                                        </div>
+                                                        <br class="clear">
+                                                        <div class="form-group">
+                                                            <label for="tagDescription">Description</label>
+                                                            <textarea id="tagDescription" name="tagDescription" rows="2"></textarea>
+                                                        </div>
+                                                        <br class="clear">
+                                                        <div class="form-group">
+                                                            <label for="tagSource">Source Notes for the Developer</label>
+                                                            <textarea id="tagSource" name="tagSource" rows="2"></textarea>
+                                                        </div> 
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="fourteen columns">
+                                            <a class="button" href="#">Submit and Done</a>
+                                            <a class="button" href="#">Submit and Add Another</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    #total-audience-reach,
+                    #total-audience-reach label {
+                        font-weight: bold;
+                    }
+                    #audience-attributes>li.message {
+                        font-style: italic;
+                    }
+                    #audience-attributes>li.deletable {
+                        position: relative;
+                        margin-bottom: 20px;
+                    }
+                    #audience-attributes>li.deletable a.delete {
+                        position: absolute;
+                        margin:0;
+                        top: 0px;
+                        right: 5px;
+                        display: none;
+                        color: #999;
+                        cursor: pointer;
+                        opacity: 0;
+                        transition: all 0.25s ease-in-out;
+                        -webkit-transition: all 0.25s ease-in-out;
+                        -moz-transition: all 0.25s ease-in-out;
+                    }
+
+                    #audience-attributes>li.deletable:hover a.delete {
+                        display: block;
+                        opacity: 1;
+                    }
+                    #audience-attributes .chzn-container {
+                        margin-bottom: 0px;
+                    }
+
+                    .metric {
+                        font-weight: bold;
+                        font-size:12px;
+                        margin: 1em 0;
+                    }
+
+                    .metric .value {
+                        font-weight: normal;
+                        border: 1px solid #cccccc;
+                        background: #eeeeee;
+                        border-radius: 10px;
+                        padding: 0 .6em 2px .6em;
+                    }
+
+                    .reach label {
+                        font-weight: normal;
+                    }
+
+                    .reach {
+                        line-height: 1;
+                        text-align: right;
+                        margin-top: 5px;
+                        font-size: 12px;
+                    }
+
+                    .reach .barchart {
+                        background: #eeeeee;
+                        width: 100px;
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+
+                    .reach .barchart .bar {
+                        background: #9AC037;
+                        height: 10px;
+                        width: 0%;
+                    }
+
+                </style>
+
+                <script>
+                    $(function() {
+
+                        function setupHotelsSelect($target) {
+                            $target.ajaxChosen({
+                                type: 'GET',
+                                url: '/resources/hotels',
+                                dataType: 'json'
+                            }, function(data) {
+                                return data;
+                            });
+                        }
+
+                        function enhanceSelects($target) {
+                            $target.find('select:visible:not(.chzn-done)').each(function() {
+                                if($(this).is(".hotel-chosen-select")) {
+                                    setupHotelsSelect($(this));
+                                } else {
+                                    $(this).chosen({
+                                        allow_single_deselect:true,
+                                        disable_search_threshold:10
+                                    });
+                                }
+                            });
+
+                        }
+
+                        function hideAttribute($target, anim, done) {
+                            if (typeof(anim) === 'undefined') {
+                                $target.hide().find('a.delete').hide();
+                            } else {
+                                $target.hide(anim, function() {
+                                    $target.find('a.delete').hide();
+                                    if (typeof(done) !== 'undefined') { done() }
+                                });
+                            }
+                        }
+
+                        function showAttribute($target, anim, done) {
+                            if (typeof(anim) === 'undefined') {
+                                $target.show().find('a.delete').show();
+                            } else {
+                                $target.not(":visible").slideDown(function() {
+                                    $target.find('a.delete').show();
+                                    if (typeof(done) !== 'undefined') { done() }
+                                });
+                            }
+                            enhanceSelects($target);
+                        }
+
+                        function createAudienceAttributeSelect($list) {
+                            var $select = $('<select>');
+                            $select.bind("refresh", function() {
+                                var $groups = {};
+                                $select.empty().append($('<option>', {value: ""}));
+                                $('li[id][data-group][data-label]', $list).each(function() {
+                                    var $listItem = $(this);
+                                    var id = $listItem.attr('id');
+                                    var groupName = $listItem.data("group");
+                                    var label = $listItem.data('label');
+                                    var $optgroup = $groups[groupName];
+                                    if (typeof($optgroup) === 'undefined') {
+                                        $optgroup = $('<optgroup>', {label: groupName});
+                                        $groups[groupName] = $optgroup;
+                                        $select.append($optgroup);
+                                    }
+                                    $optgroup.append($('<option>', {value: id}).text(label));
+                                });
+                            });
+                            return $select.trigger("refresh");
+                        }
+
+                        function addAudienceAttributeDelete($list) {
+                            $list.children('li[data-group][data-label]').addClass('deletable').each(function() {
+                                var $li = $(this);
+                                var $inputs = $li.find("input,select");
+                                var $delete = $("<a>", {'class': 'delete'})
+                                    .append($("<i>").attr({'class': 'fa fa-times'}))
+                                    .append(" remove");
+                                $li.append($delete);
+                                $delete.click(function() {
+                                    $inputs.find("option:selected").removeAttr('selected');
+                                    $inputs.val('').trigger('change').trigger("liszt:updated");
+                                    hideAttribute($li, "blind");
+                                    updateAddAttributeMessage($list);
+                                });
+                            });
+                        }
+
+                        function hideEmptyAttributes($list) {
+                            $('li[data-group][data-label]', $list).each(function() {
+                                if ($(this).find('select:first :selected,input[type=text][value!=""]').length > 0) {
+                                    showAttribute($(this));
+                                } else {
+                                    hideAttribute($(this));
+                                }
+                            });
+                        }
+
+                        function addPopupAttributeSelect($audienceCriteriaSelect) {
+                            return $audienceCriteriaSelect.mrqPopupSearchableSelect({
+                                'label': 'Add Attribute',
+                                'filterPlaceholder': 'Start Typing...'
+                            }).change(function() {
+                                var $target = $('#' + $(this).val());
+                                var focus = function() {
+                                    $target.find("input:first").focus();
+                                };
+                                if ($target.is(':visible')) {
+                                    focus();
+                                } else {
+                                    showAttribute($target, "blind", function() {focus()});
+                                }
+                            });
+                        }
+
+                        function updateAddAttributeMessage($list) {
+                            if ($list.children('li.deletable:visible').length > 0) {
+                                $list.find(".message").hide();
+                            } else {
+                                $list.find(".message").show();
+                            }
+                        }
+
+                        function setupAudienceAttributeSelect() {
+                            var $list = $('#audience-attributes');
+                            var $target = $('#audience-add-attribute-div');
+                            var $audienceCriteriaSelect = createAudienceAttributeSelect($list);
+                            $target.append($audienceCriteriaSelect);
+                            $list.prepend($("<li>", {'class': 'message'}).html("No Attributes Selected. Add Attributes."));
+                            addPopupAttributeSelect($audienceCriteriaSelect).change(function() {
+                                updateAddAttributeMessage($list);
+                            });
+                            addAudienceAttributeDelete($list);
+                            hideEmptyAttributes($list);
+                            updateAddAttributeMessage($list);
+                        }
+
+                        setupAudienceAttributeSelect();
+                        enhanceSelects($("form"));
+                    });
+                </script>
+            </div>
+        </div>
+
+        <!-- start footer -->
+        <footer>
+            <div class="mrq footer">
+                <div class="container">
+                    <div class="sixteen columns">
+                        <ul>
+                            <li><a href="#" class="feedback-button"><i class="fa fa-comment"></i> Send Feedback</a></li>
+                            <li><a href="mailto:support@mobilerq.com?subject=Help%20with%20New Audience" target="_blank"><i class="fa fa-envelope"></i> Email Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="sixteen columns">
+                        <hr>
+                    </div>
+                    <div class="sixteen columns">
+                        © 2013 MobileRQ, Inc. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/stickUp.min.js"></script>
+        <script src="js/jquery.qtip.min.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/jquery.leanModal.min.js"></script>
+
+        <script type="text/javascript">
+          //initiating jQuery
+          jQuery(function($) {
+
+            $(document).ready( function() {
+                //enabling stickUp on the '.navbar-wrapper' class
+                $('.sidebar').stickUp({
+                    marginTop: 'auto'
+               });
+
+                $('.sidebar-wrapper .tag-panel').qtip({ // Grab some elements to apply the tooltip to
+                    content: {
+                        text: ' <div class="customTooltip"><h2>Tag Name</h2><h3>Source Identifier</h3><h3>Last Modified</h3><h3>This is a description</h3></div>'
+                    },
+                    position: {
+                        my: 'bottom center',
+                        at: 'top center'
+                    },
+                    style: { classes: 'qtip-light'}
+                });
+
+                 $('#tabs').tabulous({
+                    effect: 'slideLeft'
+                 });
+
+                 $("#mrq-modalTrigger").leanModal({ top : 50, overlay : 0.4, closeButton: ".modal_close" });
+
+            });
+          });
+
+        </script>
+
+        <!-- end footer -->
+        <div id="unsavedChanges"></div>
+     </body>
+ </html>
+
