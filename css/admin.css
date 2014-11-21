@@ -98,6 +98,10 @@ label {
     text-align: left;
 }
 
+b {
+    font-weight: bold;
+}
+
 label.inline {
     margin-top: 10px;
     display: inline;
@@ -190,6 +194,7 @@ textarea.errors:focus {
 }
 
 .button {
+    height: 19px;
     font-size: 11px;
     font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight:bold;
@@ -205,15 +210,13 @@ textarea.errors:focus {
     text-transform:uppercase;
     text-shadow: none;
     margin: 1px;
-    padding: 0px 8px;
+    padding: 2px 8px;
+    text-align: center;
     transition: color .1s, background .3s, border-color .3s;
     -moz-transition: color .1s, background .3s, border-color .3s;
     -webkit-transition: color .1s, background .3s, border-color .3s;
 }
-.button {
-    height: 19px;
-    padding: 2px 8px ;
-}
+
 input.button,
 button.button {
     height: 19px;
@@ -668,6 +671,12 @@ img.mrq-icon {
 .mrq-frame .inset {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+ul.inline li {
+    display: inline-block;
+    padding: 0 3px;
+    margin-bottom: 3px;
 }
 
 ul.listing li {
