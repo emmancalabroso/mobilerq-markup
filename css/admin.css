@@ -264,6 +264,14 @@ button.button {
     -webkit-transition: color .1s, background .1s, border-color .1s;
 }
 
+.button.edit {
+    background: #808080;
+    border: solid 1px #808080;
+    transition: color .1s, background .1s, border-color .1s;
+    -moz-transition: color .1s, background .1s, border-color .1s;
+    -webkit-transition: color .1s, background .1s, border-color .1s;
+}
+
 .button.selected:not(.disabled),
 .button:hover:not(.disabled),
 .button.delete:hover:not(.disabled) {
@@ -1093,6 +1101,14 @@ nav.tabs li.active a {
 .sidebar {
     margin-top: 50px;
     background-color: #fff;
+}
+
+.sidebar h2.m-heading {
+    padding: 0.75em 0 0;
+}
+
+.sidebar h2 + .sub-label {
+    font-weight: bold;
 }
 
 /* Custom Tooltip Class */
