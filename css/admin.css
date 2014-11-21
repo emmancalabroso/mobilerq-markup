@@ -280,7 +280,7 @@ button.button {
 }`
 
 .warning {
-    color: cc3333;
+    color: #cc3333;
     font-weight: bold;
 }
 
@@ -985,6 +985,14 @@ nav.tabs li.active a {
     float: right;
 }
 
+.archive-link {
+    display: block;
+    margin-top: 5px;
+}
+
+.search input[type=text] {
+    margin-bottom: 0;
+}
 
 /*Tag Panels              */
 
