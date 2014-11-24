@@ -132,46 +132,87 @@
                 </div>
             </div>
         </div>
-        <div class="bg">
+
+        <div id="mrq-message" class="hidden"><div class="mrq-status"></div></div>
+        <div class="bg remodal-bg">
             <div class="container">
                 <div class="sixteen columns">
                     <div class="row"></div>
                 </div>
-                <form action="">
-                    <div class="mrq-frame sixteen columns">
-                        <div class="two columns alpha right">
-                            <i class="fa fa-comments fa-4x"></i>
-                        </div>
-                        <div class="eight columns omega">
-                            <div class="form-group">
-                                <label for="audience-name">Audience Name</label>
-                                <input id="audience-name" name="name" placeholder="" type="text" value="">
-                            </div>
-                            <div class="form-group">
-                                <label for="audience-group">Audience Group</label>
-                                <input id="audience-group" name="name" placeholder="" type="text" value="">
-                            </div>
-                            <div class="form-group">
-                                <label for="story">Story</label>
-                                <textarea id="story" name="copy" rows="2"></textarea>
+                <div class="sixteen columns">
+                    <div class="mrq-frame">
+                        <div class="row">
+                            <div class="fourteen columns">
+                                <div class="m-details right">
+                                    <ul class="inline">
+                                        <li>Created: <b>n/a</b></li>
+                                        <li>Created: <b>n/a</b></li>
+                                    </ul>
+                                    <p class="center">This Audience is <a href="#" class="button secondary">Inactive</a></p>
+                                </div>
                             </div>
                         </div>
-                        <br class="clear">
-                        <hr>
-                        <div class="fourteen columns alpha offset-by-one">
-                            <div class="row">
-                                <div id="audience-add-attribute-div">
-                                    <a class="mrq-ui button" href="#">Add Attribute</a>
-                                    <div class="mrq-ui search">
-                                        <div class="search-container">
-                                            <input type="text" class="search keystop" placeholder="Start Typing..." style="width: 300px;"><i class="fa fa-search"></i>
+
+                        <div class="row">
+                            <div class="seven columns">
+                                <div class="row">
+                                    <form action="">
+                                        <div class="eight columns">
+                                            <div class="form-group">
+                                                <label for="audience-name">Audience Name</label>
+                                                <input id="audience-name" name="name" placeholder="" type="text" value="">
+                                            </div>
+                                            <br class="clear">
+                                            <div class="form-group">
+                                                <label for="audience-group">Audience Group</label>
+                                                <input id="audience-group" name="name" placeholder="" type="text" value="">
+                                            </div>
+                                            <br class="clear">
+                                            <div class="form-group">
+                                                <label for="story">Story</label>
+                                                <textarea id="story" name="copy" rows="2"></textarea>
+                                            </div>
                                         </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="fourteen columns">
+                                <div class="row">
+                                    <div id="audience-add-attribute-div">
+                                        <a class="mrq-ui button" href="#">Add Attribute</a>
+                                        <!-- <div class="mrq-ui search">
+                                            <div class="search-container">
+                                                <input type="text" class="search keystop" placeholder="Start Typing..." style="width: 300px;"><i class="fa fa-search"></i>
+                                            </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <hr>
+                        <div class="seven columns">
+                            <div class="row">
+                                <form action="">
+                                    <div class="eight columns">
+                                        <div class="form-group">
+                                            <label for="">Campaigns</label>
+                                            <input id="" name="name" placeholder="" type="text" value="">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="fourteen columns">
+                                <a class="button secondary" href="#">Cancel</a>
+                                <a class="button" href="#">Save</a>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
         <!-- start footer -->
