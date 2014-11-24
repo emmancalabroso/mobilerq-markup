@@ -1204,6 +1204,19 @@ nav.tabs li.active a {
     visibility: hidden;
 }
 
+.embedded-form {
+    margin-bottom: 20px;
+}
+
+.embedded-form h5 {
+    font-weight: bold;
+}
+
+.embedded-form h5 a {
+    font-weight: normal;
+    color: #666;
+}
+
 
 
 
