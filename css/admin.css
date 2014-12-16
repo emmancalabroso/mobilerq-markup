@@ -1010,6 +1010,10 @@ nav.tabs li.active a {
     float: right;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .archive-link {
     display: block;
     margin-top: 5px;
@@ -1223,6 +1227,11 @@ nav.tabs li.active a {
 
 .action {
     margin-top: 60px;
+}
+
+.radio-inline ul li {
+    display: inline-block;
+    padding: 0 30px;
 }
 
 

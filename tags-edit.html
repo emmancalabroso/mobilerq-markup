@@ -266,7 +266,41 @@
                                         <div class="fourteen columns">
                                             <a class="button secondary" href="#">Cancel</a>
                                             <a class="button" href="#">Save</a>
-                                            <a class="button right delete" href="#">Retire Tag</a>
+                                            <a id="mrq-modalTrigger" class="button right delete" rel="leanModal" href="#mrq-modal">Retire Tag</a>
+
+                                            <!-- Modal -->
+                                            <div id="mrq-modal">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="five columns">
+                                                            <h1>Retire Tag</h1>
+                                                        </div>
+                                                        <a href="#" class="modal-close modal_close"></a>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="eight-columns">
+                                                            <h3 class="text-center">The tag <b>"Birthday"</b> is in <a href="#">4 audiences</a> and 27 live campaigns.</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="mrq-frame">
+                                                            <h2 class="text-center">Please indicate what you would like to do.</h2>
+                                                            <form action="#">
+                                                                <fieldset class="radio-inline text-center">
+                                                                    <ul>
+                                                                        <li><label><input type="radio" name="notifications" /> Just remove the Tag from the Audiences.</label></li>
+                                                                        <li><label><input type="radio" name="notifications" /> Retire the Audiences and the Tag.</label></li>
+                                                                    </ul>
+                                                                </fieldset>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <a class="button right" href="#">Retire and Remove</a>
+                                                    <a class="button delete right modal_close" href="#">Cancel</a>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -525,25 +559,6 @@
           jQuery(function($) {
 
             $(document).ready( function() {
-                //enabling stickUp on the '.navbar-wrapper' class
-                $('.sidebar').stickUp({
-                    marginTop: 'auto'
-               });
-
-                $('.sidebar-wrapper .tag-panel').qtip({ // Grab some elements to apply the tooltip to
-                    content: {
-                        text: ' <div class="customTooltip"><h2>Tag Name</h2><h3>Source Identifier</h3><h3>Last Modified</h3><h3>This is a description</h3></div>'
-                    },
-                    position: {
-                        my: 'bottom center',
-                        at: 'top center'
-                    },
-                    style: { classes: 'qtip-light'}
-                });
-
-                 $('#tabs').tabulous({
-                    effect: 'slideLeft'
-                 });
 
                  $("#mrq-modalTrigger").leanModal({ top : 50, overlay : 0.4, closeButton: ".modal_close" });
 
