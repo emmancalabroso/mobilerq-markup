@@ -177,7 +177,7 @@
                     <div class="mrq-frame">
                         <div class="row">
                             <div class="sixteen columns">
-                                <h1>Tags</h1>
+                                <h1>Events</h1>
                             </div>
                         </div>
 
@@ -185,8 +185,7 @@
                         <div class="tab-row row">
                             <nav role="navigation" class="tabs">
                                 <ul>
-                                    <li class="active"><a href="#">All Tags</a></li>
-                                    <li><a href="#">Tag Groups</a></li>
+                                    <li class="active"><a href="#">All Events</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -199,9 +198,9 @@
                                             <div class="m-details right">
                                                 <ul class="inline">
                                                     <li>Created: <b>10/01/2014</b></li>
-                                                    <li>Created: <b>10/01/2014</b></li>
+                                                    <li>Last Seen: <b>10/01/2014</b></li>
                                                 </ul>
-                                                <p class="center">This Tag is <a href="#" class="button">Active</a></p>
+                                                <p class="center">This Event is <a href="#" class="button secondary">Not HookedUp</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -211,98 +210,28 @@
                                                 <form action="">
                                                     <div class="eight columns">
                                                         <div class="form-group">
-                                                            <label for="tagName">Tag Name</label>
-                                                            <input id="tagName" name="tagName" type="text" value="">
+                                                            <label for="eventName">Event Name</label>
+                                                            <input id="eventName" name="eventName" type="text" value="">
                                                         </div>
                                                         <br class="clear">
                                                         <div class="form-group">
-                                                            <label for="tagDescription">Description</label>
-                                                            <textarea id="tagDescription" name="tagDescription" rows="2"></textarea>
-                                                        </div>   
+                                                            <label for="eventDescription">Description</label>
+                                                            <textarea id="eventDescription" name="eventDescription" rows="2"></textarea>
+                                                        </div>
+                                                        <br class="clear">
+                                                        <div class="form-group">
+                                                            <label for="eventSource">Source Notes for the Developer</label>
+                                                            <textarea id="eventSource" name="eventSource" rows="2" placeholder="Where should this data come from?"></textarea>
+                                                        </div> 
                                                     </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="seven columns">
-                                            <div class="mb-2">
-                                                <b class="mb-5">Tag ID</b>
-                                                <ul>
-                                                    <li>CRM98273-Birthday</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="seven columns">
-                                            <div class="mb-1">
-                                                <b class="mb-5">First Seen</b>
-                                                <ul>
-                                                    <li>10/12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="seven columns">
-                                            <div class="mb-2">
-                                                <b class="mb-5">Source</b>
-                                                <ul>
-                                                    <li>Source 1</li>
-                                                    <li>Source 2</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="seven columns">
-                                            <div class="mb-1">
-                                                <b class="mb-5">Last Seen</b>
-                                                <ul>
-                                                    <li>10/12</li>
-                                                    <li>10/12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <div class="action row">
                                         <div class="fourteen columns">
-                                            <a class="button secondary" href="#">Cancel</a>
-                                            <a class="button" href="#">Save</a>
-                                            <a id="mrq-modalTrigger" class="button right delete" rel="leanModal" href="#mrq-modal">Retire Tag</a>
-
-                                            <!-- Modal -->
-                                            <div id="mrq-modal">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="five columns">
-                                                            <h1>Retire Tag</h1>
-                                                        </div>
-                                                        <a href="#" class="modal-close modal_close"></a>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="eight-columns">
-                                                            <h3 class="text-center">The tag <b>"Birthday"</b> is in <a href="#">4 audiences</a> and 27 live campaigns.</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="mrq-frame">
-                                                            <h2 class="text-center">Please indicate what you would like to do.</h2>
-                                                            <form action="#">
-                                                                <fieldset class="radio-inline text-center">
-                                                                    <ul>
-                                                                        <li><label><input type="radio" name="notifications" /> Just remove the Tag from the Audiences.</label></li>
-                                                                        <li><label><input type="radio" name="notifications" /> Retire the Audiences and the Tag.</label></li>
-                                                                    </ul>
-                                                                </fieldset>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                    <a class="button right" href="#">Retire and Remove</a>
-                                                    <a class="button delete right modal_close" href="#">Cancel</a>
-                                                </div>
-                                            </div>
-
+                                            <a class="button" href="#">Submit and Done</a>
+                                            <a class="button" href="#">Submit and Add Another</a>
                                         </div>
                                     </div>
                                 </div>
@@ -561,6 +490,25 @@
           jQuery(function($) {
 
             $(document).ready( function() {
+                //enabling stickUp on the '.navbar-wrapper' class
+                $('.sidebar').stickUp({
+                    marginTop: 'auto'
+               });
+
+                $('.sidebar-wrapper .tag-panel').qtip({ // Grab some elements to apply the tooltip to
+                    content: {
+                        text: ' <div class="customTooltip"><h2>Tag Name</h2><h3>Source Identifier</h3><h3>Last Modified</h3><h3>This is a description</h3></div>'
+                    },
+                    position: {
+                        my: 'bottom center',
+                        at: 'top center'
+                    },
+                    style: { classes: 'qtip-light'}
+                });
+
+                 $('#tabs').tabulous({
+                    effect: 'slideLeft'
+                 });
 
                  $("#mrq-modalTrigger").leanModal({ top : 50, overlay : 0.4, closeButton: ".modal_close" });
 

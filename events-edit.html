@@ -177,7 +177,7 @@
                     <div class="mrq-frame">
                         <div class="row">
                             <div class="sixteen columns">
-                                <h1>Tags</h1>
+                                <h1>Events</h1>
                             </div>
                         </div>
 
@@ -185,8 +185,7 @@
                         <div class="tab-row row">
                             <nav role="navigation" class="tabs">
                                 <ul>
-                                    <li class="active"><a href="#">All Tags</a></li>
-                                    <li><a href="#">Tag Groups</a></li>
+                                    <li class="active"><a href="#">All Events</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -199,9 +198,9 @@
                                             <div class="m-details right">
                                                 <ul class="inline">
                                                     <li>Created: <b>10/01/2014</b></li>
-                                                    <li>Created: <b>10/01/2014</b></li>
+                                                    <li>Last Seen: <b>10/01/2014</b></li>
                                                 </ul>
-                                                <p class="center">This Tag is <a href="#" class="button">Active</a></p>
+                                                <p class="center">This Event is <a href="#" class="button secondary">Hooked Up</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -211,13 +210,13 @@
                                                 <form action="">
                                                     <div class="eight columns">
                                                         <div class="form-group">
-                                                            <label for="tagName">Tag Name</label>
-                                                            <input id="tagName" name="tagName" type="text" value="">
+                                                            <label for="eventName">Event Name</label>
+                                                            <input id="eventName" name="eventName" type="text" value="">
                                                         </div>
                                                         <br class="clear">
                                                         <div class="form-group">
-                                                            <label for="tagDescription">Description</label>
-                                                            <textarea id="tagDescription" name="tagDescription" rows="2"></textarea>
+                                                            <label for="eventDescription">Description</label>
+                                                            <textarea id="eventDescription" name="eventDescription" rows="2"></textarea>
                                                         </div>   
                                                     </div>
                                                 </form>
@@ -227,17 +226,44 @@
                                     <div class="row">
                                         <div class="seven columns">
                                             <div class="mb-2">
-                                                <b class="mb-5">Tag ID</b>
+                                                <b class="mb-5">Event ID</b>
                                                 <ul>
-                                                    <li>CRM98273-Birthday</li>
+                                                    <li>9879789-Birthday</li>
+                                                </ul>
+                                            </div>
+                                            <div class="mb-2">
+                                                <b class="mb-5">Tags</b>
+                                                <ul>
+                                                    <li>Passenger ID</li>
+                                                    <li>Airports</li>
+                                                    <li>Schedule</li>
+                                                    <li>Flight Info</li>
+                                                </ul>
+                                            </div>
+                                            <div class="mb-1">
+                                                <b class="mb-5">Location</b>
+                                                <ul>
+                                                    <li>N/A</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="seven columns">
-                                            <div class="mb-1">
+                                            <div class="mb-2">
                                                 <b class="mb-5">First Seen</b>
                                                 <ul>
-                                                    <li>10/12</li>
+                                                    <li>10/07/2014</li>
+                                                </ul>
+                                            </div>
+                                            <div class="mb-1">
+                                                <b class="mb-5">Times</b>
+                                                <ul>
+                                                    <li>First Departure</li>
+                                                    <li>First Arrival</li>
+                                                    <li>Second Departure</li>
+                                                    <li>Second Arrival</li>
+                                                    <li>Scheduled Departure</li>
+                                                    <li>Estimated Departure</li>
+                                                    <li>Actual Time Departure</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -263,12 +289,11 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="action row">
                                         <div class="fourteen columns">
                                             <a class="button secondary" href="#">Cancel</a>
                                             <a class="button" href="#">Save</a>
-                                            <a id="mrq-modalTrigger" class="button right delete" rel="leanModal" href="#mrq-modal">Retire Tag</a>
+                                            <a id="mrq-modalTrigger" class="button right delete" rel="leanModal" href="#mrq-modal">Archive</a>
 
                                             <!-- Modal -->
                                             <div id="mrq-modal">

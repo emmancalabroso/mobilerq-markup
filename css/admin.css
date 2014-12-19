@@ -997,13 +997,34 @@ nav.tabs li.active a {
 
 /*reusable body section*/
 .mt-1 {
+    display: block;
     margin-top: 1em;
 }
 .mt-2 {
+    display: block;
     margin-top: 2em;
 }
 .mt-3 {
+    display: block;
     margin-top: 3em;
+}
+
+.mb-5 {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.mb-1 {
+    display: block;
+    margin-bottom: 1em;
+}
+.mb-2 {
+    display: block;
+    margin-bottom: 2em;
+}
+.mb-3 {
+    display: block;
+    margin-bottom: 3em;
 }
 
 .right {
