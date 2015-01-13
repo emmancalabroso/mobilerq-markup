@@ -1309,6 +1309,10 @@ nav.tabs li.active a {
     background-color: #999;
 }
 
+.progress {
+    margin-bottom: 10px;
+}
+
 .progress .label {
     display: block;
 }
