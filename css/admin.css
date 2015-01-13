@@ -1255,5 +1255,67 @@ nav.tabs li.active a {
     padding: 0 30px;
 }
 
+/* Toggle Buttons */
+
+.switch {
+    margin-bottom: 5px;
+}
+
+.switch .label {
+    display: inline-block;
+}
+
+.switch .tabbed {
+    display: inline-block;
+    margin-left: 5px;
+    background-color: #999;
+    border-radius: 2px;
+    border: 1px solid #8b8b8b;
+}
+
+.switch .tabbed li {
+    display: inline-block;
+}
+
+.switch .tabbed li.active {
+
+}
+
+.switch .tabbed li a {
+    display: block;
+    padding: 3px 8px;
+    border-radius: 2px;
+    color: #f9f9f9;
+}
+
+.switch .tabbed li.active a {
+    background-color: #fbfbfb;
+    color: #999;
+}
+
+/* Progress Bars */
+
+.meter {
+    height: 10px;  /* Can be anything */
+    width: 100px;
+    position: relative;
+    background-color: #eaeaea;
+    display: inline-block;
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    background-color: #999;
+}
+
+.progress .label {
+    display: block;
+}
+
+.progress .label.inline {
+    display: inline-block;
+}
+    
 
 
