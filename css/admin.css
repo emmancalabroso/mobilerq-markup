@@ -364,6 +364,7 @@ table td {
     -webkit-box-shadow: 0 5px 20px #eee;
     box-shadow: 0 5px 20px #eee;
     padding: 1em;
+    word-break: break-all;
 }
 
 img.mrq-icon {
@@ -1035,7 +1036,7 @@ nav.tabs li.active a {
     text-align: center;
 }
 
-.archive-link {
+.archive-link { 
     display: block;
     margin-top: 5px;
 }
@@ -1050,7 +1051,7 @@ nav.tabs li.active a {
     position: relative;
     text-align: left;
     border-top: 1px dotted #ccc;
-
+    word-break: break-all;
 }
 
 .tag-panel.tag {
@@ -1142,6 +1143,7 @@ nav.tabs li.active a {
 
 .sidebar-wrapper {
     margin-top: -50px;
+    word-break: break-all;
 }
 
 .sidebar {
