@@ -377,6 +377,10 @@ img.mrq-icon {
     min-height: 64px;
 }
 
+.mrq-frame .row {
+    margin-bottom: 15px;
+}
+
 .mrq-frame .center {
     text-align: center;
 }
@@ -680,6 +684,17 @@ img.mrq-icon {
 .mrq-frame .inset {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.mrq-frame .m-details {
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #faffed;
+    border: 1px solid #ededed;
+}
+
+.mrq-frame .m-details p {
+    margin-bottom: 0;
 }
 
 ul.inline li {
@@ -1346,14 +1361,15 @@ nav.tabs li.active a {
     margin: 1px;
     padding: 2px 8px;
     text-align: center;
-    color: #FFF;
-    background-color: #808080;
-    border: solid 1px #808080;
+    color: #cc3333;
+    background-color: #fff;
+    border: solid 2px #cc3333;
 }
 
 .tip-label.active {
-    background-color: #9AC037;
-    border: solid 1px #9AC037;
+    color: #9AC037;
+    background-color: #FFF;
+    border: solid 2px #9AC037;
 }
     
 
