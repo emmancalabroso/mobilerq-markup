@@ -201,7 +201,7 @@
                                                     <li>Created: <b>10/01/2014</b></li>
                                                     <li>Created: <b>10/01/2014</b></li>
                                                 </ul>
-                                                <p class="center">This Tag is <span class="tip-label">Not Hooked Up</span> <span class="tip-label active">Active</span></p>
+                                                <p class="center">This Tag is <!-- <span class="tip-label">Not Hooked Up</span> --> <span class="tip-label active">Active</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -266,9 +266,12 @@
 
                                     <div class="action row">
                                         <div class="fourteen columns">
-                                            <a class="button secondary" href="#">Cancel</a>
                                             <a class="button" href="#">Save</a>
-                                            <a id="mrq-modalTrigger" class="button right delete" rel="leanModal" href="#mrq-modal">Retire Tag</a>
+                                            <a class="button secondary" href="#">Cancel</a>
+                                            <div class="right">
+                                                <a id="mrq-modalTrigger" class="button delete" rel="leanModal" href="#mrq-modal">Retire Tag</a>
+                                            </div>
+                                            
 
                                             <!-- Modal -->
                                             <div id="mrq-modal">
