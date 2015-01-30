@@ -1380,6 +1380,9 @@ nav.tabs li.active a {
     background-color: #FFF;
     border: solid 1px #9AC037;
 }
-    
+
+.mrq-ui.search h1.link {
+    cursor: pointer;
+}
 
 
