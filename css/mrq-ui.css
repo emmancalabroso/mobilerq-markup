@@ -107,3 +107,6 @@
     color: #999;
     line-height: 24px;
 }
+.mrq-ui.search h1.link {
+    cursor: pointer;
+}
