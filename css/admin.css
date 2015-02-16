@@ -1296,7 +1296,8 @@ nav.tabs li.active a {
 /* Toggle Buttons */
 
 .switch {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .switch .label {
