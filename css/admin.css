@@ -1060,9 +1060,15 @@ nav.tabs li.active a {
     text-align: center;
 }
 
-.archive-link { 
-    display: block;
-    margin-top: 5px;
+.archive-link {
+    line-height: 18px;
+    color: #9AC037;
+    font-weight: normal;
+}
+
+.archive-link input {
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 
 .search input[type=text] {
