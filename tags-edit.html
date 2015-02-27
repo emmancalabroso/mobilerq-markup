@@ -176,7 +176,7 @@
                 <div class="sixteen columns">
                     <div class="mrq-frame">
                         <div class="row">
-                            <div class="sixteen columns">
+                            <div class="alpha">
                                 <h1>Tags</h1>
                             </div>
                         </div>
@@ -192,119 +192,111 @@
                         </div>
 
                         <div class="row">
-                            <div class="fifteen columns">
-                                <div class="mrq-frame">
-                                    <div class="row">
-                                        <div class="fourteen columns">
-                                            <div class="m-details right">
-                                                <ul class="inline">
-                                                    <li>Created: <b>10/01/2014</b></li>
-                                                    <li>Created: <b>10/01/2014</b></li>
-                                                </ul>
-                                                <p class="center">This Tag is <!-- <span class="tip-label">Not Hooked Up</span> --> <span class="tip-label active">Active</span></p>
+                            <div class="mrq-frame">
+                                <div class="row">
+                                    <div class="m-details right">
+                                        <ul class="inline">
+                                            <li>Created: <b>10/01/2014</b></li>
+                                            <li>Created: <b>10/01/2014</b></li>
+                                        </ul>
+                                        <p class="center">This Tag is <!-- <span class="tip-label">Not Hooked Up</span> --> <span class="tip-label active">Active</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="eight columns alpha">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="tagName">Tag Name</label>
+                                                <input id="tagName" name="tagName" type="text" value="">
                                             </div>
+                                            <br class="clear">
+                                            <div class="form-group">
+                                                <label for="tagDescription">Description</label>
+                                                <textarea id="tagDescription" name="tagDescription" rows="2"></textarea>
+                                            </div>   
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="seven columns alpha">
+                                        <div class="mb-2">
+                                            <b class="mb-5">Tag ID</b>
+                                            <ul>
+                                                <li>CRM98273-Birthday</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="seven columns">
+                                    <div class="seven columns">
+                                        <div class="mb-1">
+                                            <b class="mb-5">First Seen</b>
+                                            <ul>
+                                                <li>10/12</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="seven columns alpha">
+                                        <div class="mb-2">
+                                            <b class="mb-5">Source</b>
+                                            <ul>
+                                                <li>Source 1</li>
+                                                <li>Source 2</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="seven columns">
+                                        <div class="mb-1">
+                                            <b class="mb-5">Last Seen</b>
+                                            <ul>
+                                                <li>10/12</li>
+                                                <li>10/12</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="action row">
+                                    <div class="eleven columns alpha">
+                                        <input type="submit" name="save" class="button" value="Save"> or
+                                        <input type="submit" name="cancel" class="button secondary" value="Cancel">
+                                    </div>
+        
+                                    <div class="omega right">
+                                        <input type="submit" name="delete" class="button delete" value="Retire Tag">
+                                    </div>
+
+                                    <!-- Modal -->
+                                    <div id="mrq-modal">
+                                        <div class="container">
                                             <div class="row">
-                                                <form action="">
-                                                    <div class="eight columns">
-                                                        <div class="form-group">
-                                                            <label for="tagName">Tag Name</label>
-                                                            <input id="tagName" name="tagName" type="text" value="">
-                                                        </div>
-                                                        <br class="clear">
-                                                        <div class="form-group">
-                                                            <label for="tagDescription">Description</label>
-                                                            <textarea id="tagDescription" name="tagDescription" rows="2"></textarea>
-                                                        </div>   
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="seven columns">
-                                            <div class="mb-2">
-                                                <b class="mb-5">Tag ID</b>
-                                                <ul>
-                                                    <li>CRM98273-Birthday</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="seven columns">
-                                            <div class="mb-1">
-                                                <b class="mb-5">First Seen</b>
-                                                <ul>
-                                                    <li>10/12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="seven columns">
-                                            <div class="mb-2">
-                                                <b class="mb-5">Source</b>
-                                                <ul>
-                                                    <li>Source 1</li>
-                                                    <li>Source 2</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="seven columns">
-                                            <div class="mb-1">
-                                                <b class="mb-5">Last Seen</b>
-                                                <ul>
-                                                    <li>10/12</li>
-                                                    <li>10/12</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="action row">
-                                        <div class="eleven columns alpha">
-                                            <input type="submit" name="save" class="button" value="Save"> or
-                                            <input type="submit" name="cancel" class="button secondary" value="Cancel">
-                                        </div>
-            
-                                        <div class="three columns omega right">
-                                            <input type="submit" name="delete" class="button delete" value="Retire Tag">
-                                        </div>
-
-                                        <!-- Modal -->
-                                        <div id="mrq-modal">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="five columns">
-                                                        <h1>Retire Tag</h1>
-                                                    </div>
-                                                    <a href="#" class="modal-close modal_close"></a>
+                                                <div class="five columns">
+                                                    <h1>Retire Tag</h1>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="eight-columns">
-                                                        <h3 class="text-center">The tag <b>"Birthday"</b> is in <a href="#">4 audiences</a> and 27 live campaigns.</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="mrq-frame">
-                                                        <h2 class="text-center">Please indicate what you would like to do.</h2>
-                                                        <form action="#">
-                                                            <fieldset class="radio-inline text-center">
-                                                                <ul>
-                                                                    <li><label><input type="radio" name="notifications" /> Just remove the Tag from the Audiences.</label></li>
-                                                                    <li><label><input type="radio" name="notifications" /> Retire the Audiences and the Tag.</label></li>
-                                                                </ul>
-                                                            </fieldset>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <a class="button right" href="#">Retire and Remove</a>
-                                                <a class="button delete right modal_close" href="#">Cancel</a>
+                                                <a href="#" class="modal-close modal_close"></a>
                                             </div>
+                                            <div class="row">
+                                                <div class="eight-columns">
+                                                    <h3 class="text-center">The tag <b>"Birthday"</b> is in <a href="#">4 audiences</a> and 27 live campaigns.</h3>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="mrq-frame">
+                                                    <h2 class="text-center">Please indicate what you would like to do.</h2>
+                                                    <form action="#">
+                                                        <fieldset class="radio-inline text-center">
+                                                            <ul>
+                                                                <li><label><input type="radio" name="notifications" /> Just remove the Tag from the Audiences.</label></li>
+                                                                <li><label><input type="radio" name="notifications" /> Retire the Audiences and the Tag.</label></li>
+                                                            </ul>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <a class="button right" href="#">Retire and Remove</a>
+                                            <a class="button delete right modal_close" href="#">Cancel</a>
                                         </div>
                                     </div>
                                 </div>
